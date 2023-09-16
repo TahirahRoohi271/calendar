@@ -1,0 +1,83 @@
+/* Center the calendar */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #004895;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Calendar Styles */
+.calendar {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header {
+    color: #f4f9ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #ffffff;
+    outline: none;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+}
+
+.header-text {
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.day-header {
+    text-align: center;
+    padding: 10px;
+    color: #006bdd;
+}
+
+table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Highlight today's date */
+table td.today {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Style for inactive (empty) cells */
+table td:empty {
+    background-color: transparent;
+}

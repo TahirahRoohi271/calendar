@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <div class="header">
+                <button id="prevMonth" class="nav-button">←</button>
+                <h1 id="currentMonth" class="header-text"></h1>
+                <button id="nextMonth" class="nav-button">→</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="day-header">Sun</th>
+                        <th class="day-header">Mon</th>
+                        <th class="day-header">Tue</th>
+                        <th class="day-header">Wed</th>
+                        <th class="day-header">Thu</th>
+                        <th class="day-header">Fri</th>
+                        <th class="day-header">Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
